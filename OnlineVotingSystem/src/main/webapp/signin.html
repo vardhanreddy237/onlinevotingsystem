@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><marquee>WELCOME TO ONLINE VOTING PORTAL</marquee></h1>
+
+    <form action="login_process.jsp" method="post">
+        <label for="t1">Enter UserName:</label>
+        <input type="text" name="t1" required><br>
+
+        <label for="t2">Enter Password:</label>
+        <input type="password" name="t2" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>

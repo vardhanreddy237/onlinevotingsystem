@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif; 
+        }
+
+        h1 {
+            text-align: center;
+            color: black; 
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        h2 input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1><marquee>WELCOME TO ONLINE VOTING PORTAL</marquee></h1>
+
+<form action="registration_process.jsp" method="post">
+    <label for="voterId">Enter Voter ID:</label>
+    <input type="text" name="voterId" required>
+
+    <label for="name">Enter Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="adhar">Enter Adhar Number:</label>
+    <input type="text" name="adhar" required>
+
+    <label for="age">Enter Age:</label>
+    <input type="text" name="age" required>
+
+    <label for="userId">Enter User ID:</label>
+    <input type="text" name="userId" required>
+
+    <label for="password">Enter Password:</label>
+    <input type="password" name="password" required>
+
+    <h2><input type="submit" value="Register"></h2>
+</form>
+
+</body>
+</html>

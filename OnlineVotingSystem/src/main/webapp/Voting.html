@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Page</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #votingForm {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="votingFormContainer">
+        <h2>VOTE FOR A PARTY</h2>
+        <form id="votingForm" action="vote.jsp" method="post">
+            <label for="partySelect">Select a party:</label>
+            <select id="partySelect" name="party">
+                <option value="BRS">BRS CAR</option>
+                <option value="CONGRESS">CONGRESS</option>
+                <option value="BJP">BJP</option>
+            </select>
+            <br>
+            
+            
+            <input type="hidden" id="voterId" name="voterId" value="">
+            
+            <br>
+            <input type="submit" value="Submit Vote">
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           
+            var urlParams = new URLSearchParams(window.location.search);
+            var voterId = urlParams.get('voterId');
+
+            if (voterId !== null) {
+                
+                document.getElementById('voterId').value = voterId;
+            } else {
+                
+                console.error('Voter ID not found in the URL.');
+            }
+        });
+    </script>
+</body>
+</html>
