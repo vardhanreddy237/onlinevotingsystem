@@ -11,13 +11,13 @@ This is an online voting system project developed in Java. The application allow
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+ 1. Clone the Repository
 First, clone the repository to your local machine using Git.
 
-2. Set Up the Development Environment
+ 2. Set Up the Development Environment
 Open the project in your preferred Integrated Development Environment (IDE), such as Eclipse or IntelliJ IDEA.
 
-3. Configure the Database
+ 3. Configure the Database
 Ensure MySQL is installed and running. Create the necessary database and tables using the following SQL statements:
 
 CREATE DATABASE voting_system;
